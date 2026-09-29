@@ -1,4 +1,32 @@
-import botPatterns from './bots.js';
+const botPatterns = [
+  'Googlebot',
+  'Bingbot',
+  'Slurp',
+  'DuckDuckBot',
+  'Baiduspider',
+  'YandexBot',
+  'Sogou',
+  'Exabot',
+  'facebot',
+  'ia_archiver',
+  'AhrefsBot',
+  'SemrushBot',
+  'MJ12bot',
+  'DotBot',
+  'PetalBot',
+  'Bytespider',
+  'Twitterbot',
+  'LinkedInBot',
+  'Applebot',
+  'archive.org_bot',
+  'CCBot',
+  'GPTBot',
+  'ClaudeBot',
+  'anthropic-ai',
+  'Google-Extended',
+  'FacebookBot',
+  'meta-externalagent'
+];
 
 const isBot = botPatterns.some(bot => 
   navigator.userAgent.toLowerCase().includes(bot.toLowerCase())
